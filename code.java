@@ -65,9 +65,9 @@ public class code{
             }
         }
         // print array method
-        System.out.print("Even Array contains: ");
+        System.out.print("Even  ");
         printArray(even);
-        System.out.print("Odd Array contains: ");
+        System.out.print("Odd: ");
         printArray(odd);
     }
 }
