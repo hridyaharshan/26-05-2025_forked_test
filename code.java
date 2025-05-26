@@ -1,4 +1,4 @@
-public class Main {
+public class code{
 
     // Print array method
     public static void printArray(int[] array)
@@ -6,6 +6,19 @@ public class Main {
         for (int i = 0; i < array.length; i++)
             System.out.print(array[i] + " ");
         System.out.println();
+    }
+
+    public static boolean palin(int number) {
+        int original = number;
+        int reversed = 0;
+
+        while (number > 0) {
+            int digit = number % 10;
+            reversed = reversed * 10 + digit;
+            number /= 10;
+        }
+
+        return original == reversed;
     }
     public static void main(String[] args)
     {
@@ -31,6 +44,25 @@ public class Main {
                 even[j++] = array[i];
             else
                 odd[k++] = array[i];
+        }
+
+        System.out.println();
+        for(int i=0;i<even.length;i++)
+        {
+            if(palin(even[i]))
+            {
+                System.out.println(even[i]);
+            }
+        }
+        System.out.println();
+
+
+        for(int i=0;i<odd.length;i++)
+        {
+            if(palin(odd[i]))
+            {
+                System.out.println(odd[i]);
+            }
         }
         // print array method
         System.out.print("Even Array contains: ");
