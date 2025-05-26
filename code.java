@@ -68,6 +68,5 @@ public class code{
         System.out.print("Even  ");
         printArray(even);
         System.out.print("Odd: ");
-        printArray(odd);
     }
 }
